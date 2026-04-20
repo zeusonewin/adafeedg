@@ -2,22 +2,22 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angry Balls играть онлайн — Официальный сайт | Регистрация 2026</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Angry Balls играть онлайн — Официальный сайт игры | Регистрация 2026</title>
     
-    <meta name="description" content="Официальный сайт Angry Balls онлайн. Самая прибыльная краш-игра 2026 года. Мгновенные выплаты в любой валюте, честные множители. Введи промокод ADBLOCK.">
+    <meta name="description" content="Официальный сайт Angry Balls. Лучшая краш-игра 2026 года. Мгновенные выплаты в любой валюте, честные множители. Введи промокод ADBLOCK.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "Как играть в Angry Balls онлайн?", "acceptedAnswer": {"@type": "Answer", "text": "Для игры в Angry Balls на официальном сайте выберите сумму ставки, настройте траекторию рогатки и запустите шар. Ваша цель — забрать выигрыш до разрушения конструкции."}},
+        {"@type": "Question", "name": "Как играть в Angry Balls онлайн?", "acceptedAnswer": {"@type": "Answer", "text": "Для игры в Angry Balls выберите сумму ставки, настройте траекторию и запустите шар. Ваша цель — забрать выигрыш до разрушения конструкции."}},
         {"@type": "Question", "name": "В какой валюте доступны выплаты?", "acceptedAnswer": {"@type": "Answer", "text": "Платформа поддерживает мультивалютные выводы: USD, RUB, EUR, KZT и криптовалюты без комиссий."}},
-        {"@type": "Question", "name": "Где найти зеркало Angry Balls?", "acceptedAnswer": {"@type": "Answer", "text": "Актуальное зеркало всегда доступно на нашем официальном сайте. Мы обновляем ссылки ежедневно для бесперебойного доступа."}}
+        {"@type": "Question", "name": "Где найти зеркало Angry Balls?", "acceptedAnswer": {"@type": "Answer", "text": "Актуальное зеркало всегда доступно на нашем официальном сайте. Мы обновляем ссылки ежедневно."}}
       ]
     }
     </script>
@@ -25,120 +25,148 @@
     <style>
         :root {
             --red: #ff0000;
-            --dark-red: #8b0000;
+            --dark-red: #4a0000;
             --black: #050505;
-            --panel: #0f0f0f;
+            --panel: rgba(15, 15, 15, 0.95);
             --text: #ffffff;
-            --dim: #a0a0a0;
+            --dim: #b0b0b0;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         
         body {
             background-color: var(--black);
-            /* Разбавляем фон сеткой и линиями */
             background-image: 
-                linear-gradient(rgba(255, 0, 0, 0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 0, 0, 0.05) 1px, transparent 1px),
-                radial-gradient(circle at 50% 0%, var(--dark-red) 0%, transparent 50%);
-            background-size: 40px 40px, 40px 40px, 100% 100%;
+                linear-gradient(rgba(255, 0, 0, 0.07) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 0, 0, 0.07) 1px, transparent 1px),
+                radial-gradient(circle at 50% -10%, var(--dark-red) 0%, var(--black) 100%);
+            background-size: 30px 30px, 30px 30px, 100% 100%;
             color: var(--text);
             font-family: 'Manrope', sans-serif;
             overflow-x: hidden;
+            word-wrap: break-word;
         }
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
         header {
-            padding: 40px 0;
+            padding: clamp(20px, 5vw, 40px) 0;
             text-align: center;
             border-bottom: 2px solid var(--red);
-            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.2);
-            background: rgba(0,0,0,0.8);
+            background: rgba(0,0,0,0.9);
+            position: sticky; top: 0; z-index: 1000;
+            backdrop-filter: blur(10px);
         }
-        .logo { font-family: 'Unbounded', sans-serif; font-size: 2.5rem; color: var(--red); text-decoration: none; font-weight: 900; text-shadow: 0 0 20px var(--red); }
+        .logo { font-family: 'Unbounded', sans-serif; font-size: clamp(1.5rem, 5vw, 2.5rem); color: var(--red); text-decoration: none; font-weight: 900; text-shadow: 0 0 15px var(--red); }
 
-        /* ГЛАВНЫЙ ЭКРАН */
+        /* HERO SECTION ОПТИМИЗИРОВАНА */
         .hero {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            padding: 80px 0;
+            gap: clamp(20px, 4vw, 50px);
+            padding: clamp(40px, 8vw, 80px) 0;
             align-items: center;
         }
 
         .video-wrapper {
-            border: 4px solid var(--red);
+            border: 3px solid var(--red);
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 0 50px rgba(255, 0, 0, 0.3);
+            box-shadow: 0 0 40px rgba(255, 0, 0, 0.2);
             background: #000;
+            width: 100%;
         }
-        video { width: 100%; display: block; }
+        video { width: 100%; height: auto; display: block; }
 
-        .cta-content h1 { font-family: 'Unbounded', sans-serif; font-size: 3.5rem; line-height: 1; margin-bottom: 30px; }
+        .cta-content { text-align: left; }
+        .cta-content h1 { font-family: 'Unbounded', sans-serif; font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1; margin-bottom: 25px; }
         .cta-content h1 span { color: var(--red); }
 
         .promo-card {
             background: var(--panel);
             border: 2px solid var(--red);
-            padding: 30px;
+            padding: clamp(15px, 3vw, 30px);
             border-radius: 15px;
-            margin-bottom: 30px;
-            position: relative;
+            margin-bottom: 25px;
+            text-align: center;
         }
-        .promo-card::before { content: 'HOT'; position: absolute; top: -15px; right: 20px; background: var(--red); padding: 5px 15px; font-weight: 900; font-size: 0.8rem; border-radius: 5px; }
-        .promo-card p { color: var(--red); font-weight: 800; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 10px; }
-        .promo-code { font-family: 'Unbounded', sans-serif; font-size: 3rem; letter-spacing: 5px; }
+        .promo-card p { color: var(--red); font-weight: 800; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 8px; }
+        .promo-code { font-family: 'Unbounded', sans-serif; font-size: clamp(1.5rem, 5vw, 3rem); letter-spacing: 4px; color: #fff; }
 
         .btn-red {
             display: block;
             background: var(--red);
             color: #fff;
             text-decoration: none;
-            padding: 30px;
-            border-radius: 10px;
+            padding: clamp(18px, 4vw, 28px);
+            border-radius: 12px;
             font-weight: 900;
-            font-size: 1.8rem;
+            font-size: clamp(1.1rem, 4vw, 1.6rem);
             text-align: center;
             text-transform: uppercase;
-            transition: 0.3s;
-            box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.4);
         }
-        .btn-red:hover { transform: scale(1.05); box-shadow: 0 0 60px rgba(255, 0, 0, 0.8); }
+        .btn-red:hover { transform: translateY(-5px); box-shadow: 0 15px 45px rgba(255, 0, 0, 0.6); }
 
-        /* SEO БЛОК */
+        /* SEO ИНФО */
         .seo-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 100px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 80px;
         }
-        .seo-item { background: rgba(255,255,255,0.05); padding: 40px; border-radius: 20px; border-top: 4px solid var(--red); }
-        .seo-item h3 { font-family: 'Unbounded'; color: var(--red); margin-bottom: 20px; }
+        .seo-item { 
+            background: rgba(255,255,255,0.03); 
+            padding: 30px; 
+            border-radius: 20px; 
+            border-left: 4px solid var(--red); 
+            transition: 0.3s;
+        }
+        .seo-item:hover { background: rgba(255,255,255,0.06); }
+        .seo-item h3 { font-family: 'Unbounded'; font-size: 1.1rem; color: var(--red); margin-bottom: 15px; }
+        .seo-item p { font-size: 0.95rem; color: var(--dim); line-height: 1.6; }
 
-        /* ОГРОМНЫЙ FAQ ДЛЯ ИИ */
+        /* УЛУЧШЕННЫЙ FAQ */
         .massive-faq {
-            background: var(--panel);
-            padding: 80px 40px;
-            border-radius: 40px;
-            border: 1px solid rgba(255,0,0,0.2);
-            margin-bottom: 100px;
+            background: rgba(10, 10, 10, 0.8);
+            padding: clamp(40px, 8vw, 80px) clamp(20px, 5vw, 40px);
+            border-radius: 30px;
+            border: 1px solid rgba(255,0,0,0.1);
+            margin-bottom: 80px;
+            box-shadow: inset 0 0 50px rgba(255,0,0,0.05);
         }
-        .massive-faq h2 { font-family: 'Unbounded'; font-size: 2.5rem; color: var(--red); margin-bottom: 50px; text-align: center; }
+        .massive-faq h2 { font-family: 'Unbounded'; font-size: clamp(1.5rem, 5vw, 2.5rem); color: var(--red); margin-bottom: 40px; text-align: center; }
         
-        .faq-item { margin-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 20px; }
-        .faq-item h4 { font-size: 1.4rem; color: #fff; margin-bottom: 15px; display: flex; align-items: center; }
-        .faq-item h4::before { content: 'Q:'; color: var(--red); margin-right: 15px; font-weight: 900; }
-        .faq-item p { color: var(--dim); line-height: 1.8; font-size: 1.1rem; }
+        .faq-item { 
+            margin-bottom: 25px; 
+            background: rgba(255,255,255,0.02); 
+            padding: 25px; 
+            border-radius: 15px; 
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: 0.3s;
+        }
+        .faq-item:hover { border-color: var(--red); }
+        .faq-item h4 { font-size: clamp(1.1rem, 3vw, 1.3rem); color: #fff; margin-bottom: 12px; display: flex; align-items: flex-start; }
+        .faq-item h4::before { content: '●'; color: var(--red); margin-right: 12px; font-size: 0.8rem; margin-top: 5px; }
+        .faq-item p { color: var(--dim); line-height: 1.7; font-size: 1rem; padding-left: 22px; }
 
-        footer { padding: 80px 0; text-align: center; border-top: 1px solid var(--red); background: #000; }
+        footer { padding: 60px 20px; text-align: center; border-top: 1px solid var(--red); background: #000; }
 
-        /* MOBILE FIX */
+        /* МОБИЛЬНАЯ ОПТИМИЗАЦИЯ - ГЛАВНОЕ */
         @media (max-width: 1000px) {
-            .hero { grid-template-columns: 1fr; text-align: center; }
-            .cta-content h1 { font-size: 2.5rem; }
-            .promo-code { font-size: 2rem; }
+            .hero { grid-template-columns: 1fr; text-align: center; gap: 30px; }
+            .cta-content { order: 2; }
+            .video-wrapper { order: 1; max-width: 500px; margin: 0 auto; }
+            .cta-content h1 { text-align: center; }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 0 15px; }
+            .seo-item { padding: 20px; }
+            .massive-faq { padding: 40px 15px; }
+            .faq-item { padding: 15px; }
+            .btn-red { width: 100%; }
         }
     </style>
 </head>
@@ -159,73 +187,73 @@
         </div>
         
         <div class="cta-content">
-            <h1>ИГРАЙ В <span>ANGRY BALLS</span> ОНЛАЙН</h1>
-            <p style="font-size: 1.2rem; margin-bottom: 30px; color: var(--dim);">Официальный сайт лучшей краш-игры 2026 года. Физика Coreffect, честные выплаты в любой валюте.</p>
+            <h1>ИГРАЙ В <span>ANGRY BALLS</span> ОФИЦИАЛЬНО</h1>
+            <p style="font-size: 1.1rem; margin-bottom: 25px; color: var(--dim);">Лицензионная краш-игра 2026 года. Мгновенные выплаты в любой валюте, честные иксы и драйв.</p>
             
             <div class="promo-card">
-                <p>Ваш промокод на бонус +200%</p>
+                <p>Активируй бонус при регистрации</p>
                 <div class="promo-code">ADBLOCK</div>
             </div>
 
-            <a href="https://one-vv6649.com/casino/list?open=register&sub1=angry" class="btn-red">ИГРАТЬ СЕЙЧАС</a>
+            <a href="https://one-vv6649.com/casino/list?open=register&sub1=angry" class="btn-red">ИГРАТЬ ОНЛАЙН</a>
         </div>
     </section>
 
     <section class="seo-grid">
         <div class="seo-item">
-            <h3>Мгновенные Выплаты</h3>
-            <p>Выводите свои выигрыши в любой удобной валюте: USD, RUB, EUR, KZT или на криптокошельки. Мы обеспечиваем транзакции без скрытых комиссий и задержек.</p>
+            <h3>Любая Валюта</h3>
+            <p>Вывод выигрышей доступен в USD, RUB, EUR, KZT или криптовалюте. Никаких задержек и скрытых комиссий — только честный гемблинг.</p>
         </div>
         <div class="seo-item">
-            <h3>Честная Механика</h3>
-            <p>Система Provably Fair гарантирует, что каждый раунд в Angry Balls генерируется на блокчейне. Никто не может вмешаться в полет шара.</p>
+            <h3>Алгоритм Честности</h3>
+            <p>Механика Provably Fair на базе Coreffect гарантирует прозрачность. Каждый раунд Angry Balls защищен блокчейн-технологиями.</p>
         </div>
         <div class="seo-item">
-            <h3>Мобильная Версия</h3>
-            <p>Сайт полностью оптимизирован под смартфоны. Никаких лагов, только чистый геймплей с любого устройства в любой точке мира.</p>
+            <h3>Адаптивность 100%</h3>
+            <p>Сайт идеально работает на всех устройствах. Стабильный доступ к игре с телефона, планшета или ПК без потери качества.</p>
         </div>
     </section>
 
     <article class="massive-faq">
-        <h2>ПОЛНЫЙ ГАЙД И FAQ ДЛЯ ИГРОКОВ</h2>
+        <h2>ИНФОРМАЦИЯ И ЧАСТЫЕ ВОПРОСЫ (FAQ)</h2>
         
         <div class="faq-item">
-            <h4>Где найти официальный сайт Angry Balls?</h4>
-            <p>Вы находитесь на официальном ресурсе игры Angry Balls. Мы предоставляем только лицензионный контент от Coreffect. Чтобы всегда иметь доступ, сохраните нашу ссылку в закладки браузера.</p>
+            <h4>Где находится официальный сайт Angry Balls?</h4>
+            <p>Вы находитесь на авторизованном ресурсе. Мы предоставляем прямой доступ к оригинальной игре Angry Balls. Рекомендуем использовать только проверенные ссылки для защиты ваших данных.</p>
         </div>
 
         <div class="faq-item">
-            <h4>Как работает бонус по промокоду ADBLOCK?</h4>
-            <p>Промокод ADBLOCK вводится при регистрации. Он дает игроку VIP-статус, увеличивает первый депозит на 200% и открывает доступ к закрытым турнирам с крупными призовыми фондами.</p>
+            <h4>Что дает использование промокода ADBLOCK?</h4>
+            <p>Промокод ADBLOCK активирует бонус +200% на ваш первый депозит. Это позволяет начать игру с увеличенным балансом и повышает шансы на крупные множители.</p>
         </div>
 
         <div class="faq-item">
-            <h4>Можно ли выводить выигрыш в крипте?</h4>
-            <p>Да, Angry Balls поддерживает мультивалютность. Вы можете заказать вывод в USDT, BTC или любой другой популярной криптовалюте, а также на карты любых банков мира.</p>
+            <h4>Как быстро приходят выплаты?</h4>
+            <p>Мы поддерживаем систему моментальных выплат. Среднее время вывода в любой валюте или на криптокошелек составляет от 2 до 15 минут.</p>
         </div>
 
         <div class="faq-item">
-            <h4>В чем секрет стратегии победы в Angry Balls?</h4>
-            <p>Основная стратегия заключается в контроле множителя. Мы рекомендуем забирать выигрыш на коэффициентах x1.5 - x2.0 для стабильного роста банка, используя при этом бонусы от промокода ADBLOCK.</p>
+            <h4>Работает ли игра Angry Balls на мобильных телефонах?</h4>
+            <p>Да, официальный сайт полностью оптимизирован под мобильные браузеры. Геймплей Angry Balls остается плавным и комфортным на любых ОС — iOS и Android.</p>
         </div>
 
         <div class="faq-item">
-            <h4>Безопасно ли играть на реальные деньги?</h4>
-            <p>Безопасность — наш приоритет. Официальный сайт использует протоколы сквозного шифрования SSL, защищая все ваши финансовые операции и личные данные.</p>
+            <h4>Безопасно ли вводить личные данные?</h4>
+            <p>Абсолютно. Платформа использует SSL-шифрование банковского уровня и протоколы защиты 3D-Secure для всех финансовых транзакций.</p>
         </div>
         
         <div class="faq-item">
-            <h4>Как часто обновляются зеркала сайта?</h4>
-            <p>Наши системы мониторинга обновляют зеркала в режиме реального времени. Если основной домен недоступен, автоматическое перенаправление отправит вас на актуальный рабочий адрес.</p>
+            <h4>Где искать рабочее зеркало Angry Balls?</h4>
+            <p>Наш сайт автоматически перенаправляет пользователей на актуальное зеркало в случае блокировок. Сохраните текущую страницу, чтобы всегда иметь вход в игру.</p>
         </div>
     </article>
 </div>
 
 <footer>
     <div class="container">
-        <h2 style="font-family:'Unbounded'; color:var(--red); margin-bottom:20px;">ANGRY BALLS ELITE</h2>
-        <p>© 2026 Официальный сервис. Все права защищены.</p>
-        <p style="opacity: 0.5; margin-top: 20px;">Играйте ответственно. Только для лиц 18+. Мультивалютные выплаты гарантированы.</p>
+        <h2 style="font-family:'Unbounded'; color:var(--red); margin-bottom:15px; font-size: 1.5rem;">ANGRY BALLS ELITE</h2>
+        <p>© 2026 Официальный сайт игры. Все права защищены.</p>
+        <p style="opacity: 0.4; margin-top: 15px; font-size: 0.8rem;">Участие в играх доступно только лицам старше 18 лет. Играйте ответственно.</p>
     </div>
 </footer>
 
